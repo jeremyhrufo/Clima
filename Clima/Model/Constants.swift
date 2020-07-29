@@ -22,5 +22,5 @@ struct Constants {
     static let latitudeParam = "lat="
     static let longitudeParam = "lon="
     static let apiKeyParam = "appid="
-    static let developerApiKey = "a043600de24e3e73a6e92350d052e3db"
+    static let developerApiKey = ""
 }
