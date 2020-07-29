@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F8011CD24D1F0FB00E28B4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8011CC24D1F0FB00E28B4C /* Constants.swift */; };
 		1FF2648324CC997700CD972C /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF2648224CC997700CD972C /* WeatherManager.swift */; };
 		1FF2648524CCADA200CD972C /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF2648424CCADA200CD972C /* WeatherData.swift */; };
 		1FF2648724CCB6C400CD972C /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF2648624CCB6C400CD972C /* WeatherModel.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F8011CC24D1F0FB00E28B4C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1FF2648224CC997700CD972C /* WeatherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		1FF2648424CCADA200CD972C /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		1FF2648624CCB6C400CD972C /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				1FF2648224CC997700CD972C /* WeatherManager.swift */,
 				1FF2648424CCADA200CD972C /* WeatherData.swift */,
 				1FF2648624CCB6C400CD972C /* WeatherModel.swift */,
+				1F8011CC24D1F0FB00E28B4C /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				1FF2648524CCADA200CD972C /* WeatherData.swift in Sources */,
 				ADAA27B1231BBFAF00365194 /* AppDelegate.swift in Sources */,
 				1FF2648324CC997700CD972C /* WeatherManager.swift in Sources */,
+				1F8011CD24D1F0FB00E28B4C /* Constants.swift in Sources */,
 				1FF2648724CCB6C400CD972C /* WeatherModel.swift in Sources */,
 				ADAA27B3231BBFAF00365194 /* SceneDelegate.swift in Sources */,
 			);
