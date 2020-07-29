@@ -8,12 +8,15 @@
 import Foundation
 
 struct WeatherModel {
-    let conditionId: Int
+    let conditionId: Int?
     let temperature: Double
     let units: TemperatureUnits
     let cityName: String
-    let description: String
-    
+    let countryName: String
+    let description: String?
+    let message: String?
+    let cod: String?
+
     var temperatureString: String {
         return String(format: "%0.1f", self.temperature)
     }
@@ -23,15 +26,20 @@ struct WeatherModel {
     }
     
     init(data: WeatherData, units: TemperatureUnits, weatherIndex: Int) {
-        self.conditionId = data.weather[weatherIndex].id
-        self.temperature = data.main.temp
+        self.cod = data.cod
+        self.message = data.message
+        
+        self.conditionId = data.weather?[weatherIndex].id
+        self.temperature = data.main?.temp ?? 0.0
         self.units = units
         self.cityName = data.name
-        self.description = data.weather[weatherIndex].description
+        self.countryName = data.sys?.country ?? ""
+        self.description = data.weather?[weatherIndex].description
     }
     
     var conditionName: WeatherSymbols {
-        switch self.conditionId {
+        // If there is no valid conditionId, we will set it to 100 to get a question mark
+        switch self.conditionId ?? 100 {
         case 200...202,
              222...232: return .cloudBoltRain
         case 203...221: return .cloudBolt

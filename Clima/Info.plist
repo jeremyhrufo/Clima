@@ -2,8 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationUsageDescription</key>
+	<string>In order to get the current weather for your location, we need to access your location.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>To receive updated weather conditions and alerts, we need to always have access to your location.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>In order to get the current weather for your current location, we need to access your location.</string>
+	<string>In order to get the current weather for your location, we need to access your location.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
