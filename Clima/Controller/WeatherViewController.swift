@@ -198,7 +198,7 @@ extension WeatherViewController: CLLocationManagerDelegate {
         case .notDetermined:
             break
         @unknown default:
-            print("Error")
+            print("Test Error")
             break
         }
         
